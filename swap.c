@@ -9,9 +9,10 @@ void swap_max(int arr[], int l, int n)
     if (arr[i] > max)
     {
       max = arr[i];
+    }
       temp = arr[i];
-      arr[i] = max;
-      max = temp;
+      arr[i] = arr[n];
+      arr[n] = temp;
    }
 }
 void ssort (int arr[], int l)
