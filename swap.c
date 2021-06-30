@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 
 void swap_max(int arr[], int l, int n)
@@ -21,7 +21,7 @@ void swap_max(int arr[], int l, int n)
       arr[i]=t;
     }
 }
-
+}
 
 void ssort(int arr[], int l)
 {
