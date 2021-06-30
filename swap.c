@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-int max;
 void swap_max(int arr[], int l, int n)
 {
+  int max;
   for (int i=0; i<l-1; i++)
   {
     max = i;
@@ -18,7 +18,7 @@ void swap_max(int arr[], int l, int n)
 }
 int ssort (int a[], int l)
 {
-  for (int i=0; i<l; i++)
+  for (int i=0; i<l-1; i++)
   {
     swap_max(a, l, i);
    }
