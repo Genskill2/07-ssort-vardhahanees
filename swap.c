@@ -11,13 +11,15 @@ void swap_max(int arr[], int l, int n)
     {
       max = arr[i];
     }
+  }
+  for( int i=n; i<l; i++)
+  {
     if(arr[i]==max)
     {
       t = arr[n];
       arr[n] = arr[i];
       arr[i]  =t;
     }
-  }
 }
 
 
