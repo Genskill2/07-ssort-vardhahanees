@@ -2,23 +2,21 @@
 #include <stdlib.h>
 void swap_max(int arr[], int l, int n)
 {
-  int max;
-  for (int i=0; i<l-1; i++)
+  int max = arr[n];
+  for (int i=n; i<l; i++)
   {
-    max = i;
-    for (int j=n; j<l; j++)
+    if (arr[i] > max)
     {
-    if (arr[j] > arr[max])
-    {
-      int temp = arr[j];
-      arr[j] = arr[max];
-      arr[max] = temp;
-    }
+      max = arr[i]
+    } 
+    int temp = arr[i];
+    arr[i] = max;
+    max = temp;
    }
 }
 int ssort (int a[], int l)
 {
-  for (int i=0; i<l-1; i++)
+  for (int i=0; i<l; i++)
   {
     swap_max(a, l, i);
    }
