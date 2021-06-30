@@ -13,7 +13,6 @@ void swap_max(int arr[], int l, int n)
       temp = arr[n];
       arr[n] = max;
       arr[pos] = temp;
-    }
    }
 }
 void ssort (int arr[], int l)
